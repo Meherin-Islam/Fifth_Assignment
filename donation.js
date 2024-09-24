@@ -15,14 +15,12 @@ function addMoney(event, balanceId, moneyInput){
         document.getElementById(balanceId).innerText = newBalance;
         document.getElementById('account-balance').innerText = newAccountBalance;
         document.getElementById('my_modal_5').showModal();
-
-        // transaction
+  
         const p = document.createElement('p');
-        p.innerText = ` ${addMoneyNumber} Taka is Donated for affected peoples at ${balanceId}`
+        p.innerText = ` ${addMoneyNumber} Taka is Donated for affected people at ${balanceId}`
 
         document.getElementById('transaction').appendChild(p);
-
-        p.style.textAlign = 'center'; 
+     p.style.textAlign = 'center'; 
         p.style.fontWeight = 'bold';  
         p.style.marginTop = '20px';   
         p.style.marginBottom = '10px';
@@ -44,22 +42,20 @@ function addMoney(event, balanceId, moneyInput){
     }
 
     else{
-        alert('Failed to add your donation. Please insert a valid donation amount.');
+        alert('Failed to  donate. Please enter a valid  amount.');
     }
 }
 
-// Noakhali part
 document.getElementById('btn-add-money').addEventListener('click', 
 function(event){
     addMoney(event,'Noakhali,Bangladesh', 'add-money-input') 
 })
 
-// Feni part
 document.getElementById('btn-add-money2').addEventListener('click', function(event){
     addMoney(event,'Feni,Bangladesh', 'add-money-input2')
 })
 
-// Quota part
+
 document.getElementById('btn-add-money3').addEventListener('click', function(event){
     addMoney(event, 'Quota Movement,Bangladesh', 'add-money-input3')
 })

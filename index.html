@@ -12,6 +12,7 @@
         extend: {
           colors: {
             clifford: '#da373d',
+            btn_primary: ' rgb(180, 244, 97);',
           }
         }
       }
@@ -19,7 +20,36 @@
   </script>
 
 </head>
-<body>
-    
+<body class="p-0 m-0">
+    <header>
+        <nav class="py-4 px-32 h-24 mb-10">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                 
+                   
+                  
+                  <a class="btn bg-btn_primary text-xl font-bold">Blog</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  
+                    <img class="mr-4" src="assets/logo.png" alt="" srcset="">
+                    <p class="text-xl font-bold mt-3 " >Donate Bangladesh</p>
+                </div>
+                <div class="navbar-end">
+                 <img class="mr-3" src="assets/coin.png" alt="" srcset="">
+                 <p class="text-xl font-semibold">5500 BDT</p>
+                </div>
+              </div>
+        </nav>
+    </header>
+    <main>
+        <section class="pt-20 px-36 ">
+           <div class=" w-4/12 mx-auto mb-8">
+            <button class="text-xl font-bold px-8 py-4 bg-btn_primary mr-4 rounded-lg">Donation</button>
+            <button class="text-xl font-bold px-8 py-4 bg-btn_primary rounded-lg">History</button>
+           </div>
+
+        </section>
+    </main>
 </body>
 </html>
